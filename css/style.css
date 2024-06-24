@@ -1,0 +1,158 @@
+
+
+    /* reset */
+body, h1, ul, li {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NavBar */
+nav {
+    background: #3aaed8;
+    box-shadow: 0px 1px 3px #00000088;
+}
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav h1 {
+    float: left;
+    padding-left: 50px;
+    line-height: 50px;
+}
+
+/* 隱藏 checkbox */
+input {
+    display: none;
+}
+
+/* 漢堡按鈕 */
+label {
+    float: right;
+    padding-right: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+label img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* menu*/
+.menu {
+    clear: both;
+    background: #52aa8a;
+}
+.menu li {
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+}
+.menu li a {
+    display: block;
+    line-height: 50px;
+    font-size: 18px;
+    color: #5d5d5d;
+    font-weight:bold;
+}
+.menu li a:hover {
+    background: #388659;
+    color: #fff;
+}
+
+/* 下拉選單效果 */
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    /* 動畫秒數 */
+}
+
+.top-left-image {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 300px;
+    height: auto;
+    z-index: 999;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: auto;
+    z-index: 999;
+}
+
+
+input:checked ~ .menu {
+    max-height: 300px;
+}
+
+/* mediaquery */
+@media screen and (min-width: 768px) {
+    label {
+        display: none;
+    }
+
+    .menu {
+        float: right;
+        clear: none;
+        max-height: 50px;
+        background: #3aaed8;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu li a {
+        padding: 0 15px;
+    }
+}
+
+
+.icon {
+    width: 50px; /* 设置宽度 */
+    height: auto; /* 设置高度自动调整以保持纵横比 */
+    margin-right: 10px;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+
+
+.login-box{
+    background: #e9ecef;
+    color: #333;
+    box-shadow:
+            3px 3px 8px rgba(0, 0, 0, .4),
+            -8px -8px 12px rgba(255, 255, 255, .9);
+
+}
+
+.inputbox_top_margin{
+    margin-top: 5px;
+}
+
+.background{
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+
